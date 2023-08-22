@@ -28,11 +28,15 @@ h1 {
 }
 
 /* Styling the Navbar icon */
+.icon {
+    text-align: center;
+    color: white;
+    margin-left: 20px;  
+}
+
 .icon img {
     width: 60px;
     height: auto;
-    margin-left: 20px;
-    
 }
 
 /* Styling the Navbar links */
