@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(19, 74, 138);
+}
+
+/* Styling the Navbar */
+.navbar {
+    background-color: rgb(39, 136, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Styling the Navbar icon */
+.icon img {
+    width: 60px;
+    height: auto;
+    margin-left: 20px;
+    
+}
+
+/* Styling the Navbar links */
+.links {
+    margin-right: 40px;
+}
+
+.links a {
+    color: white;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.links a:hover {
+    color: lightgray;
+}
+
+
+/* Styling the footer */
+footer {
+    background-color: rgb(39, 136, 247);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Styling the footer content */
+footer p {
+    margin: 5px;
+}
+
+/* Styling the footer contacts section */
+.footerContacts {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footerContacts p {
+    margin: 5px 0;
+}
+
+/* Styling footer links */
+.footerContacts a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerContacts a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Styling the goal container */
+.goal {
+    text-align: center;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+/* Styling the progress bar */
+#goalBar {
+    width: 100%;
+    height: 20px;
+    appearance: none;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Styling the progress bar value */
+#goalBar::-webkit-progress-value {
+    background-color: rgb(19, 74, 138);
+    border-radius: 5px;
+}
+
+/* Styling the labels */
+.goal p {
+    margin: 5px 0;
+}
+
+.moneyGoal {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* Styling the pages container */
+.pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling each link set */
+.linkPages {
+    text-align: center;
+    margin: 50px 100px;
+}
+
+.linkPages img {
+    max-width: 250px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.linkPages a {
+    color: #333;
+    font-size: 16px;
+}
+
+.linkPages a:hover {
+    color: lightgray;
+}

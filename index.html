@@ -4,47 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Budget Planner</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <nav>
-      <ul>
-        <header>Budget Planner</header>
-        <div class="navbar">
-          <li><a href="#main">Home</a></li>
-          <li><a href="#forum">Forum</a></li>
-          <li><a href="#calculator">Calculator</a></li>
-          <li><a href="#tips">Tips</a></li>
+    <nav class="navbar">
+        <div class="icon">
+          <a href="index.html">
+            <img src="imgs/icon.png" alt="">
+          </a>  
         </div>
-      </ul>
+     
+        <div class="links">
+          <a href="pages/forum.html">Forum</a>
+          <a href="pages/calculator.html">Calculator</a>
+          <a href="#tips">Tips</a>
+        </div>
     </nav>
+
     <main>
-      <article>
-        <h1>Project Starter</h1>
-        <h3>Content</h3>
-        <p>
-          <span
-            >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-            debitis facilis tenetur corporis vitae dolorum temporibus,
-            assumenda, natus cumque, nulla ut. Facilis nisi expedita nesciunt
-            quam impedit suscipit ipsa maxime?</span
-          ><span
-            >Amet atque, velit tempora laudantium eius dolorem similique ducimus
-            perferendis consequuntur eveniet soluta voluptatibus dignissimos
-            officiis tenetur magni, debitis aspernatur ex ea eos error quis
-            quia, cumque inventore placeat. Quod.</span
-          ><span
-            >Modi tempora dolor excepturi hic eum iusto nesciunt aut quae maxime
-            saepe. Nemo inventore quod vitae, error, molestiae nulla est
-            deleniti iure libero atque ad non amet dicta harum soluta.</span
-          >
-        </p>
-        <h3>Content</h3>
-      </article>
+        <h1>Save Smart</h1>
+
+        <div class="goal">
+          <p>Currently Money</p>
+          <progress id="goalBar" value="32" max="100"> 32% </progress>
+          <div class="moneyGoal">
+            <p>Monthly Goal</p>
+            <p>150 €</p>            
+          </div>
+        </div>
+
+        <div class="pages">
+          <div class="linkPages">
+            <img src="imgs/forum.jpg" alt="">
+            <a href="pages/forum.html">Forum</a>
+          </div>
+          <div class="linkPages">
+            <img src="imgs/calculator.jpeg" alt="">
+            <a href="pages/calculator.html">Calculator</a>
+          </div>
+          <div class="linkPages">
+            <img src="imgs/tips.jpg" alt="">
+            <a href="">Savings Tips</a>
+          </div>
+        </div>
 
       <footer>
+        <div class="footerContacts">
+          <p>Contacts</p>
+          <p>+874384738382</p>
+          <p>info@savesmart.com</p>
+        </div>
         <p>Created by CFG black-team</p>
       </footer>
+
     </main>
     <script src="/js/main.js"></script>
   </body>
