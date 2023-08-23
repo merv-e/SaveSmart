@@ -37,21 +37,14 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar p, a{
-        font-size: medium;
-        /* background-color: blue; */
-    }
-
     .navbar{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items:first baseline;
-        padding: 10px;
+        /* padding: 10px; */
     }
     
     .links a{
-        /* display: flex; */
-        /* flex-direction:column; */
         margin-right: 0;
     }
 }
@@ -98,10 +91,9 @@ footer {
     background-color: var(--main-blue);
     color: var(--main-white);
     text-align: center;
-    padding: 20px 10px;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: column; 
+    flex-wrap: wrap;
 }
 
 /* Styling the footer content */
@@ -112,13 +104,19 @@ footer p {
 /* Styling the footer contacts section */
 .footerContacts {
     display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    margin-top: 10px;
+    justify-content: space-between;
+    padding: 20px 10px;
+    gap: 1rem;
+    /* margin-top: 10px; */
     font-size: 18px;
-    text-align: left;
+    /* text-align: left; */
 }
 
+footer p{
+    display: flex;
+    align-self: flex-end;
+    padding: 0 5px 5px 0;
+}
 
 /* Styling footer links */
 .footerContacts a {
@@ -128,11 +126,15 @@ footer p {
 
 .footerContacts a:hover {
     text-decoration: underline;
-    background-color: var(--secondary-blue);
 }
 
 @media only screen and (max-width: 600px) {
-    .footerContacts p:last-child {
+    footer {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    footer p {
         font-size: x-small;
     }
 }
