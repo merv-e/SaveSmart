@@ -1,3 +1,10 @@
+:root {
+    --main-blue: rgb(39, 136, 247); 
+    --secondary-blue: #8EA4D2; 
+    --main-white : #f8efef;
+}
+
+
 body {
     margin: 0;
 }
@@ -20,76 +27,115 @@ h1 {
 
 /* Styling the Navbar */
 .navbar {
-    background-color: rgb(39, 136, 247);
+    background-color: var(--main-blue);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    /* overflow: hidden; */
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar p, a{
+        font-size: medium;
+        /* background-color: blue; */
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items:first baseline;
+        padding: 10px;
+    }
+    
+    .links a{
+        /* display: flex; */
+        /* flex-direction:column; */
+        margin-right: 0;
+    }
+}
+
+
 
 /* Styling the Navbar icon */
 .icon {
-    text-align: center;
-    color: white;
+    /* text-align: center; */
+    color: var(--main-white);
     margin-left: 20px;  
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .icon img {
-    width: 60px;
+    width: 30px;
     height: auto;
 }
 
 /* Styling the Navbar links */
 .links {
-    margin-right: 40px;
+    /* margin-right: 40px; */
 }
 
 .links a {
-    color: white;
+    color: var(--main-white);
     margin-right: 40px;
     font-size: 20px;
 }
 
 .links a:hover {
     color: lightgray;
+    background-color: var(--secondary-blue);
+    padding: 15px;
 }
+
+
 
 
 /* Styling the footer */
 footer {
-    background-color: rgb(39, 136, 247);
-    color: white;
+    background-color: var(--main-blue);
+    color: var(--main-white);
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 /* Styling the footer content */
 footer p {
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 /* Styling the footer contacts section */
 .footerContacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 18px;
+    text-align: left;
 }
 
-.footerContacts p {
-    margin: 5px 0;
-}
 
 /* Styling footer links */
 .footerContacts a {
-    color: white;
+    color: var(--main-white);
     text-decoration: none;
 }
 
 .footerContacts a:hover {
     text-decoration: underline;
+    background-color: var(--secondary-blue);
 }
 
-
-
+@media only screen and (max-width: 600px) {
+    .footerContacts p:last-child {
+        font-size: x-small;
+    }
+}
 
 
 /* Styling the goal container */
@@ -133,26 +179,28 @@ footer p {
 
 
 
-
-
 /* Styling the pages container */
 .pages {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    gap: 50px;
+    margin: 5rem 0;
 }
 
 /* Styling each link set */
 .linkPages {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin: 50px 100px;
+    min-width: 250px;
+    gap: 1rem;
 }
 
 .linkPages img {
     max-width: 250px;
     height: 150px;
-    margin-bottom: 10px;
 }
 
 .linkPages a {
@@ -162,4 +210,12 @@ footer p {
 
 .linkPages a:hover {
     color: lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+    .pages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
