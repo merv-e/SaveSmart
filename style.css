@@ -7,6 +7,7 @@
 
 body {
     margin: 0;
+    background-color: rgb(231, 236, 243);
 }
 
 * {
@@ -21,7 +22,6 @@ a {
 
 h1 {
     text-align: center;
-    margin-top: 30px;
     color: rgb(19, 74, 138);
 }
 
@@ -140,14 +140,40 @@ footer p{
 }
 
 
+
+
+
+/* Styling the welcome container */
+.welcome {
+    text-align: center;
+    background-color: white;
+    margin: 30px 525px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--secondary-blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.welcome p {
+    color: rgb(19, 74, 138);
+    margin-top: 20px;
+}
+
+
+
+
+
 /* Styling the goal container */
 .goal {
     text-align: center;
     margin: 20px auto;
     padding: 30px;
-    border: 1px solid #ccc;
+    border: 1px solid;
     border-radius: 5px;
+    border-color: var(--secondary-blue);
     max-width: 300px;
+    background-color: white;
 }
 
 /* Styling the progress bar */
@@ -184,11 +210,10 @@ footer p{
 /* Styling the pages container */
 .pages {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 50px;
-    margin: 5rem 0;
+    gap: 0px;
+    margin: 5rem 100px;
 }
 
 /* Styling each link set */
@@ -196,18 +221,27 @@ footer p{
     display: flex;
     flex-direction: column;
     text-align: center;
-    min-width: 250px;
+    min-width: 150px;
     gap: 1rem;
 }
 
 .linkPages img {
-    max-width: 250px;
+    max-width: 220px;
     height: 150px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: rgb(19, 74, 138);
 }
 
 .linkPages a {
     color: #333;
     font-size: 16px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: rgb(19, 74, 138);
+    background-color: white;
+    padding: 5px 10px; 
+    text-align: center;
 }
 
 .linkPages a:hover {
@@ -220,4 +254,65 @@ footer p{
         align-items: center;
         justify-content: center;
     }
+}
+
+
+
+
+
+
+
+
+/* Styling the calculator container */
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Styling calculator elements */
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styling result message */
+#resultMessage {
+    font-weight: bold;
+    color: #333;
 }
