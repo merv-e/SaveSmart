@@ -118,3 +118,16 @@ h1 {
         gap: 2rem;
     }
 }
+
+#options {
+    display: grid;
+    align-items:center;
+    justify-content:center;
+    word-wrap: break-word;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.options {
+    padding: 10px;
+}
