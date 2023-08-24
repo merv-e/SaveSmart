@@ -1,133 +1,144 @@
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
-/* !!!!! */
 h1 {
-    text-align: center;
-    color: rgb(19, 74, 138);
+  text-align: center;
+  color: rgb(19, 74, 138);
 }
 
 /* Styling the welcome container */
 .welcome {
-    text-align: center;
-    background-color: white;
-    margin: 30px 525px;
-    border: 1px solid;
-    border-radius: 10px;
-    border-color: var(--secondary-blue);
-    padding-top: 20px;
-    padding-bottom: 20px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: var(--secondary-blue);
+  padding: 20px 0;
 }
 
 .welcome p {
-    color: rgb(19, 74, 138);
-    margin-top: 20px;
+  color: rgb(19, 74, 138);
+  margin-top: 20px;
 }
 
-
-
 /* Styling the goal container */
+.goals {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: space-evenly;
+}
+
 .goal {
-    text-align: center;
-    margin: 20px auto;
-    padding: 30px;
-    border: 1px solid;
-    border-radius: 5px;
-    border-color: var(--secondary-blue);
-    max-width: 300px;
-    background-color: white;
+  text-align: center;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: var(--secondary-blue);
+  max-width: 300px;
+  background-color: white;
+  width: 300px;
 }
 
 /* Styling the progress bar */
 #goalBar {
-    width: 100%;
-    height: 20px;
-    appearance: none;
-    border: none;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    margin: 10px 0;
+  width: 100%;
+  height: 20px;
+  appearance: none;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 10px 0;
 }
 
 /* Styling the progress bar value */
 #goalBar::-webkit-progress-value {
-    background-color: rgb(19, 74, 138);
-    border-radius: 5px;
+  background-color: rgb(19, 74, 138);
+  border-radius: 5px;
 }
 
 /* Styling the labels */
 .goal p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .moneyGoal {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .goals {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: max-content;
+  }
 }
 
 
 /* Styling the pages container */
 .pages {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0px;
-    margin: 5rem 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0px;
+  margin: 5rem 100px;
 }
 
 /* Styling each link set */
 .linkPages {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    min-width: 150px;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 150px;
+  gap: 1rem;
 }
 
 .linkPages img {
-    max-width: 220px;
-    height: 150px;
-    border: 1px solid;
-    border-radius: 10px;
-    border-color: rgb(19, 74, 138);
+  max-width: 220px;
+  height: 150px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: rgb(19, 74, 138);
 }
 
 .linkPages a {
-    color: #333;
-    font-size: 16px;
-    border: 1px solid;
-    border-radius: 10px;
-    border-color: rgb(19, 74, 138);
-    background-color: white;
-    padding: 5px 10px; 
-    text-align: center;
+  color: #333;
+  font-size: 16px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: rgb(19, 74, 138);
+  background-color: white;
+  padding: 5px 10px;
+  text-align: center;
 }
 
 .linkPages a:hover {
-    color: lightgray;
+  color: lightgray;
 }
 
 @media only screen and (max-width: 600px) {
-    .pages {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
+  .pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
 
 #options {
-    display: grid;
-    align-items:center;
-    justify-content:center;
-    word-wrap: break-word;
-    font-size: medium;
-    font-weight: 500;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  font-size: medium;
+  font-weight: 500;
+  padding: 20px;
 }
 
-.options {
-    padding: 10px;
+.option {
+  padding: 10px;
 }
