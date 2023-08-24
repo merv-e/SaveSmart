@@ -34,29 +34,38 @@
         <p>Welcome Back!</p>
       </div>
 
-      <div class="goal">
-        <p>Your Progress This Month</p>
-        <progress id="goalBar" value="32" max="100">32%</progress>
-        <div class="moneyGoal">
-          <p>Daily Goal</p>
-          <p id="dailyGoal">5 €</p>
-          <p>Monthly Goal</p>
-          <p id="monthlyGoal">150 €</p>
+      <div class="goals" >
+        <div class="goal">
+          <p>Your Daily Progress</p>
+          <div class="moneyGoal">
+            <p>Daily Goal</p>
+            <p id="dailyGoal">5 €</p>
+          </div>
+        </div>
+
+        <div class="goal">
+          <p>Your Progress This Month</p>
+          <progress id="goalBar" value="32" max="100">32%</progress>
+          <div class="moneyGoal">
+            <p>Monthly Goal</p>
+            <p id="monthlyGoal">150 €</p>
+          </div>
         </div>
       </div>
 
       <div id="options">
-        <div class="options">
+        <div class="option">
           <input type="checkbox" id="option1" name="option1" value="option1" />
           <label for="option1"
             >I would like the targeted amount to be automatically sent to my
             separate account on a daily basis.</label
           >
         </div>
-        <div class="options">
-          <input type="checkbox" id="option2" name="option2" value="option2"/>
+        <div class="option">
+          <input type="checkbox" id="option2" name="option2" value="option2" />
           <label for="option2"
-            >I would like to be notified via e-mail or SMS if I exceed my daily goal.</label
+            >I would like to be notified via e-mail or SMS if I exceed my daily
+            goal.</label
           >
         </div>
       </div>
