@@ -67,14 +67,11 @@ h1 {
 }
 
 
-
-
-
-
 /* Styling the pages container */
 .pages {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0px;
     margin: 5rem 100px;
@@ -117,79 +114,7 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
-}
-
-
-
-
-
-
-
-/* Calculator */
-
-#calculator {
-    display: flex;
-    /* flex-direction: column; */
-    justify-self: center;
-    align-self:center;
-    /* width: 100%; */
-    
-}
-
-
-/* Styling the calculator container */
-.calculator {
-    /* max-width: 400px; */
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    /* width: max-content;
-    height: min-content; */
-    background-color: #f9f9f9;
-}
-
-/* Styling calculator elements */
-h1 {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#results {
-    margin-top: 20px;
-    text-align: center;
-}
-
-/* Styling result message */
-#resultMessage {
-    font-weight: bold;
-    color: #333;
 }

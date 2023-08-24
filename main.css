@@ -1,5 +1,4 @@
 /* This file contains general rules for styling of body, navigation bar and footer */
-
 :root {
     --main-blue: rgb(39, 136, 247);
     --secondary-blue: #8EA4D2;
@@ -29,6 +28,7 @@ body {
     /* overflow: hidden; */
 }
 
+/* styling navbar and the related elements to make the page responsive */
 @media only screen and (max-width: 600px) {
     .navbar {
         display: flex;
@@ -60,9 +60,6 @@ body {
 }
 
 /* Styling the Navbar links */
-.links {
-    /* margin-right: 40px; */
-}
 
 .links a {
     color: var(--main-white);
@@ -89,10 +86,6 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Styling the footer content */
-footer p {
-    /* margin: 5px; */
-}
 
 /* Styling the footer contacts section */
 .footerContacts {
@@ -121,6 +114,7 @@ footer p {
     text-decoration: underline;
 }
 
+/* styling footer and the related elements to make the page responsive */
 @media only screen and (max-width: 600px) {
     footer {
         display: flex;
