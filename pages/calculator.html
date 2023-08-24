@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="../style.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../styles/calculator.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="icon">
-          <a href="../index.html">
-            <img src="../imgs/icon.png" alt="" />
-          </a>
-          <a href="../index.html">SaveSmart</a>
+      <div class="icon">
+        <a href="../index.html">
+          <img src="../imgs/icon.png" alt="" />
+        </a>
+        <a href="../index.html">SaveSmart</a>
+      </div>
+
+      <div class="links">
+        <a href="forum.html">Forum</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="tips.html">Tips</a>
+      </div>
+    </nav>
+
+    <main id="calculator">
+      <div class="calculator">
+        <h1>Savings Calculator</h1>
+        <label for="monthlyGoal">Monthly Goal:</label>
+        <input
+          type="number"
+          id="monthlyGoal"
+          placeholder="Enter goal amount"
+          min="0"
+        />
+
+        <label for="dailySavings">Daily Savings:</label>
+        <input
+          type="number"
+          id="dailySavings"
+          placeholder="Enter daily savings amount"
+          min="0"
+        />
+
+        <button id="calculate">Calculate</button>
+
+        <div id="results">
+          <h2>Results:</h2>
+          <p id="resultMessage">-</p>
         </div>
-  
-        <div class="links">
-          <a href="forum.html">Forum</a>
-          <a href="calculator.html">Calculator</a>
-          <a href="tips.html">Tips</a>
-        </div>
-      </nav>
-
-
-
-    <div class="calculator">
-       <h1>Savings Calculator</h1>
-       <label for="monthlyGoal">Monthly Goal:</label>
-       <input type="number" id="monthlyGoal" placeholder="Enter goal amount">
-
-       <label for="dailySavings">Daily Savings:</label>
-       <input type="number" id="dailySavings" placeholder="Enter daily savings amount">
-
-       <button id="calculate">Calculate</button>
-
-       <div id="results">
-           <h2>Results:</h2>
-           <p id="resultMessage">-</p>
-       </div>
-    </div>
-    
-    
+      </div>
+    </main>
     <footer>
-        <div class="footerContacts">
-          <a href="mailto:info@savesmart.com">Contact Us</a>
-          <a href="" target="_blank">Privacy Policy</a>
-          <a href="" target="_blank">Terms and Conditions</a>
-        </div>
-        <p>Copyright team-black ©2023</p>
+      <div class="footerContacts">
+        <a href="mailto:info@savesmart.com">Contact Us</a>
+        <a href="" target="_blank">Privacy Policy</a>
+        <a href="" target="_blank">Terms and Conditions</a>
+      </div>
+      <p>Copyright team-black ©2023</p>
     </footer>
 
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>

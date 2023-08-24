@@ -1,0 +1,133 @@
+/* This file contains general rules for styling of body, navigation bar and footer */
+
+:root {
+    --main-blue: rgb(39, 136, 247);
+    --secondary-blue: #8EA4D2;
+    --main-white: #f8efef;
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(231, 236, 243);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the Navbar */
+.navbar {
+    background-color: var(--main-blue);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* overflow: hidden; */
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        /* padding: 10px; */
+    }
+
+    .links a {
+        margin-right: 0;
+    }
+}
+
+
+
+/* Styling the Navbar icon */
+.icon {
+    /* text-align: center; */
+    color: var(--main-white);
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon img {
+    width: 30px;
+    height: auto;
+}
+
+/* Styling the Navbar links */
+.links {
+    /* margin-right: 40px; */
+}
+
+.links a {
+    color: var(--main-white);
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.links a:hover {
+    color: lightgray;
+    background-color: var(--secondary-blue);
+    padding: 15px;
+}
+
+
+
+
+/* Styling the footer */
+footer {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Styling the footer content */
+footer p {
+    /* margin: 5px; */
+}
+
+/* Styling the footer contacts section */
+.footerContacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    gap: 1rem;
+    /* margin-top: 10px; */
+    font-size: 18px;
+    /* text-align: left; */
+}
+
+footer p {
+    display: flex;
+    align-self: flex-end;
+    padding: 0 5px 5px 0;
+}
+
+/* Styling footer links */
+.footerContacts a {
+    color: var(--main-white);
+    text-decoration: none;
+}
+
+.footerContacts a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p {
+        font-size: x-small;
+    }
+}
