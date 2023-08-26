@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forum</title>
-    <link rel="stylesheet" href="../main.css"/>
-    <link rel="stylesheet" href="../styles/forum.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../styles/forum.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="icon">
-          <a href="../index.html">
-            <img src="../imgs/icon.png" alt="" />
-          </a>
-          <a href="../index.html">SaveSmart</a>
-        </div>
-  
-        <div class="links">
-          <a href="forum.html">Forum</a>
-          <a href="calculator.html">Calculator</a>
-          <a href="tips.html">Tips</a>
-        </div>
-      </nav>
+      <div class="icon">
+        <a href="../index.html">
+          <img src="../imgs/icon.png" alt="" />
+        </a>
+        <a href="../index.html">SaveSmart</a>
+      </div>
 
+      <div class="links">
+        <a href="forum.html">Forum</a>
+        <a href="calculator.html">Calculator</a>
+        <a href="tips.html">Tips</a>
+      </div>
+    </nav>
+
+    <div id="forum">
       <div class="comments-section">
         <h2>User Comments</h2>
         <!-- User comments go here -->
         <div class="comment">
-          <img src="user1.jpg" alt="User 1">
+          <img src="user1.jpg" alt="User 1" />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <!-- More comments... -->
       </div>
-    
+
       <div class="faq-section">
         <h2>Frequently Asked Questions</h2>
         <!-- FAQ content goes here -->
@@ -42,37 +43,42 @@
         </div>
         <!-- More FAQs... -->
       </div>
-    
+
       <div class="add-comment-section">
         <h2>Add Your Comment</h2>
-        <form action="#" method="post">
+        <form id="form_comment" action="#" method="post">
           <label for="userComment">Your Comment:</label>
-          <textarea id="userComment" name="userComment" rows="4" required></textarea>
-          <button type="submit">Submit</button>
+          <textarea
+            id="userComment"
+            name="userComment"
+            rows="4"
+            required
+          ></textarea>
+          <button id="comment_button" type="submit">Submit</button>
         </form>
       </div>
-    
+
       <div class="contact-section">
         <h2>Contact Us</h2>
-        <form action="#" method="post">
+        <form id="form_contact" method="post">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" required />
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" required />
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="4" required></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
-
+    </div>
     <footer>
-        <div class="footerContacts">
-          <a href="mailto:info@savesmart.com">Contact Us</a>
-          <a href="" target="_blank">Privacy Policy</a>
-          <a href="" target="_blank">Terms and Conditions</a>
-        </div>
-        <p>Copyright Team Black ©2023</p>
+      <div class="footerContacts">
+        <a href="mailto:info@savesmart.com">Contact Us</a>
+        <a href="" target="_blank">Privacy Policy</a>
+        <a href="" target="_blank">Terms and Conditions</a>
+      </div>
+      <p>Copyright Team Black ©2023</p>
     </footer>
-
-</body>
+    <script src="../js/forum.js"></script>
+  </body>
 </html>
