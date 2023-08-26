@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../main.css"/>
-    <link rel="stylesheet" href="../styles/forum.css"/>
+    <link rel="stylesheet" href="../styles/tips.css"/>
     <title>Tip of the day</title>
     
   </head>
@@ -53,19 +53,6 @@
       <p>Copyright Team Black ©2023</p>
     </footer>
     <!--Adding a button that functions-->
-    <script>
-      function share() {
-        let name = prompt("What is your name?");
-        let email = prompt("What is your email address?");
-        let tip = prompt("What tip would you like to share?");
-
-        if (name < 1) {
-          alert("Thank you for sharing your tip!");
-        } else alert("Thank you " + name + ", for sharing your tip!");
-      }
-
-      let shareTips = document.querySelector(".share-tips");
-      shareTips.addEventListener("click", share);
-    </script>
+    <script src="../js/tips.js"></script>
   </body>
 </html>
