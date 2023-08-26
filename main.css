@@ -98,14 +98,16 @@ footer {
 
 footer p {
     display: flex;
-    align-self: flex-end;
+    align-self: center;
     padding: 0 5px 5px 0;
+    font-size: 12px;
 }
 
 /* Styling footer links */
 .footerContacts a {
     color: var(--main-white);
     text-decoration: none;
+    padding-left: 75px;
 }
 
 .footerContacts a:hover {
