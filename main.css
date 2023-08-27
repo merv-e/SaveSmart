@@ -76,6 +76,16 @@ body {
   padding: 15px;
 }
 
+/* Styling the main element */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
 /* Styling the footer */
 footer {
   background-color: var(--main-blue);
