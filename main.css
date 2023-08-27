@@ -1,127 +1,126 @@
 /* This file contains general rules for styling of body, navigation bar and footer */
 :root {
-    --main-blue: rgb(39, 136, 247);
-    --secondary-blue: #8EA4D2;
-    --main-white: #f8efef;
+  --main-blue: rgb(39, 136, 247);
+  --secondary-blue: #8ea4d2;
+  --main-white: #f8efef;
 }
 
-
 body {
-    margin: 0;
-    background-color: rgb(231, 236, 243);
+  margin: 0;
+  background-color: rgb(231, 236, 243);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Styling the Navbar */
 .navbar {
-    background-color: var(--main-blue);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+  background-color: var(--main-blue);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 /* styling navbar and the related elements to make the page responsive */
 @media only screen and (max-width: 600px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: first baseline;
-        /* padding: 10px; */
-    }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    /* padding: 10px; */
+  }
 
-    .links a {
-        margin-right: 0;
-    }
+  .links a {
+    margin-right: 0;
+  }
 }
-
-
 
 /* Styling the Navbar icon */
 .icon {
-    /* text-align: center; */
-    color: var(--main-white);
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  /* text-align: center; */
+  color: var(--main-white);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .icon img {
-    width: 30px;
-    height: auto;
+  width: 30px;
+  height: auto;
+}
+
+.icon a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
 /* Styling the Navbar links */
 
 .links a {
-    color: var(--main-white);
-    margin-right: 40px;
-    font-size: 20px;
+  color: var(--main-white);
+  margin-right: 40px;
+  font-size: 20px;
 }
 
 .links a:hover {
-    color: lightgray;
-    background-color: var(--secondary-blue);
-    padding: 15px;
+  color: lightgray;
+  background-color: var(--secondary-blue);
+  padding: 15px;
 }
-
-
-
 
 /* Styling the footer */
 footer {
-    background-color: var(--main-blue);
-    color: var(--main-white);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* Styling the footer contacts section */
 .footerContacts {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 10px;
-    gap: 1rem;
-    /* margin-top: 10px; */
-    font-size: 18px;
-    /* text-align: left; */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  gap: 1rem;
+  /* margin-top: 10px; */
+  font-size: 18px;
+  /* text-align: left; */
 }
 
 footer p {
-    display: flex;
-    align-self: center;
-    padding: 0 5px 5px 0;
-    font-size: 12px;
+  display: flex;
+  align-self: center;
+  padding: 0 5px 5px 0;
+  font-size: 12px;
 }
 
 /* Styling footer links */
 .footerContacts a {
-    color: var(--main-white);
-    text-decoration: none;
-    padding-left: 75px;
+  color: var(--main-white);
+  text-decoration: none;
+  padding-left: 75px;
 }
 
 .footerContacts a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* styling footer and the related elements to make the page responsive */
 @media only screen and (max-width: 600px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
 
-    footer p {
-        font-size: x-small;
-    }
+  footer p {
+    font-size: x-small;
+  }
 }
