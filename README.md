@@ -7,4 +7,4 @@ Maria Inês Barbosa <br>
 Merve Betül Üstün <br>
 Sian Buckley
 
-Website: https://merv-e.github.io/budget-planner/
+**Website**: https://merv-e.github.io/budget-planner/
