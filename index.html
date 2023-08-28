@@ -14,7 +14,7 @@
     <nav class="navbar">
       <div class="icon">
         <a href="index.html">
-          <img src="imgs/icon.png" alt="" />
+          <img src="imgs/icon.png" alt="icon of the website" />
         </a>
         <a href="index.html">SaveSmart</a>
       </div>
@@ -32,11 +32,17 @@
         <p>Welcome Back!</p>
       </div>
 
-      <div class="goals" >
+      <div class="goals">
         <div class="goal">
           <p>Money Saved Daily</p>
           <div class="moneyGoal">
             <p id="dailyGoal">5 €</p>
+            <img src="" alt="" />
+            <!-- style span --- text-align : left -->
+            <span
+              >Check your settings to see if it is being updated at the end of
+              everyday <b>automatically</b>.</span
+            >
           </div>
         </div>
 
@@ -50,21 +56,37 @@
         </div>
       </div>
 
-      <div id="options">
-        <div class="option">
-          <input type="checkbox" id="option1" name="option1" value="option1" />
-          <label for="option1"
-            >I would like the targeted amount to be automatically sent to my
-            separate account on a daily basis.</label
-          >
-        </div>
-        <div class="option">
-          <input type="checkbox" id="option2" name="option2" value="option2" />
-          <label for="option2"
-            >I would like to be notified via e-mail or SMS if I exceed my daily
-            goal.</label
-          >
-        </div>
+      <div id="preferences">
+        <form>
+          <h2>Preferences</h2>
+          <div class="preference">
+            <input
+              type="checkbox"
+              id="preference1"
+              name="preference1"
+              value="preference1"
+            />
+            <label for="preference1"
+              >I would like the targeted amount to be automatically sent to my
+              separate account on a daily basis.</label
+            >
+          </div>
+          <div class="preference">
+            <input
+              type="checkbox"
+              id="preference2"
+              name="preference2"
+              value="preference2"
+            />
+            <label for="preference2"
+              >I would like to be notified via e-mail or SMS if I exceed my
+              daily goal.</label
+            >
+          </div>
+          <div class="button">
+            <button type="submit">Update preferences</button>
+          </div>
+        </form>
       </div>
 
       <div class="pages">
@@ -81,14 +103,17 @@
           <a href="pages/tips.html">Savings Tips</a>
         </div>
       </div>
-
     </main>
     <footer>
       <div class="footerContacts">
-        <a href="./pages/extra/who_are_we.html" target="_blank">Who are we?</a> 
+        <a href="./pages/extra/who_are_we.html" target="_blank">Who are we?</a>
         <a href="mailto:info@savesmart.com">Contact Us</a>
-        <a href="./pages/extra/privacy_policy.html" target="_blank">Privacy Policy</a>
-        <a href="./pages/extra/terms_and_conditions.html" target="_blank">Terms and Conditions</a>
+        <a href="./pages/extra/privacy_policy.html" target="_blank"
+          >Privacy Policy</a
+        >
+        <a href="./pages/extra/terms_and_conditions.html" target="_blank"
+          >Terms and Conditions</a
+        >
       </div>
       <p>Copyright Team Black ©2023</p>
     </footer>

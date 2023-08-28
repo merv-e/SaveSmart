@@ -30,6 +30,10 @@ body {
   padding: 10px 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* styling navbar and the related elements to make the page responsive */
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -58,7 +62,6 @@ body {
 }
 
 .icon a {
-  text-decoration: none;
   color: white;
   font-size: 20px;
 }

@@ -64,7 +64,6 @@ h1 {
 
 .moneyGoal {
   margin-top: 20px;
-  
 }
 
 @media only screen and (max-width: 600px) {
@@ -74,7 +73,6 @@ h1 {
     grid-template-rows: max-content;
   }
 }
-
 
 /* Styling the pages container */
 .pages {
@@ -128,17 +126,60 @@ h1 {
   }
 }
 
-#options {
-  display: grid;
+/* Styling the preferences  */
+#preferences {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-items: center;
+  font-size: large;
+  /* max-width: 400px; */
+
   word-wrap: break-word;
-  font-size: medium;
-  font-weight: 500;
-  padding: 20px;
+  border: 1px solid var(--secondary-blue);
+  border-radius: 5px;
+  background-color: white;
+  /* margin: 2rem; */
+  padding: 1rem;
+  /* background-color: red; */
 }
 
-.option {
-  padding: 10px;
+#preferences h2 {
+  text-align: center;
+  color: #0056b3;
+  margin: 2rem;
+}
+
+.preference {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+#preferences button:last-child {
+  display: flex;
+  justify-self: center;
+}
+
+.button {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
