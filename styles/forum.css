@@ -15,45 +15,63 @@
 .faq-section,
 .add-comment-section,
 .contact-section {
-  width: 400px;
-  max-width: 400px;
+  width: 600px;
+  max-width: 600px;
   height: auto;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 50px;
   background-color: #f9f9f9;
+}
+
+h2 {
+  color: rgb(19, 74, 138);
 }
 
 /* Comments section */
 .comments-section {
   margin: 20px;
-  max-width: 400px;
+  text-align: justify;
 }
 
 .comment {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  line-height: 1.5;
+  padding-right: 10px;
 }
 
 .comment img {
   border-radius: 50%;
   margin-right: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 /* FAQ section */
 .faq-section {
-  max-width: 400px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 50px;
+  
 }
 
 .faq h3 {
   margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  color: #0056b3;
 }
+
+.faq p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+
 
 /* Form sections */
 .add-comment-section,
@@ -64,13 +82,12 @@
 form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
 }
 
 textarea,
 input {
   width: 100%;
-  padding: 8px;
+  padding: 20px 150px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -84,6 +101,8 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s;
+  width: 100px;
+  margin: 0 auto;
 }
 
 label {
