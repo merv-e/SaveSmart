@@ -158,11 +158,6 @@ h1 {
   gap: 5px;
 }
 
-#preferences button:last-child {
-  display: flex;
-  justify-self: center;
-}
-
 .button {
   display: flex;
   justify-self: center;
