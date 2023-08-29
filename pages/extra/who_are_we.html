@@ -6,34 +6,65 @@
     <title>The Team</title>
     <link rel="stylesheet" href="../../main.css" />
     <!-- <link rel="stylesheet" href="./" /> -->
-     <style>
-        .image-container {
-          position: relative;
-          display: flex;
+    <style>
+      h1 {
+        color: #0056b3;
+        text-align: center;
+      }
 
-          align-items: center;
-        }
+      .image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
 
-        .image-container img {
-          flex: 1;
-          margin: 10px;
-          padding-left: 20px;
-          padding-right: 20px;
-          width: 50px;
-        }
-        .style-button {
-          font-size: 16px;
-          text-align: center;
-          font-weight: bold;
-          margin-top: 10px;
-          cursor: pointer;
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        #info-button {
-      margin-top: 10px;
+      .image-container img {
+        flex: 1;
+        margin: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 50px;
+        text-align: center;
+        display: inline-block;
+      }
+      .style-button {
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #more-info {
+        margin-top: 10px;
+        background-color: white;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: #007bff;
+        color: #fffdf2;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        background-color: #0056b3;
+      }
     </style>
   </head>
   <body>
@@ -53,66 +84,67 @@
     </nav>
 
     <main>
-      <h1>Who are we?</h1>
+      <h1>Meet Team Black!</h1>
       <!-- Explanation of how we met and why we created this website. -->
       <!-- Add CSS -->
       <!-- Add more content with HTML -->
       <div>
-        <h2 class="team">Team</h2>
         <div class="image-container">
-      <div>
-        <img
-          src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
-          alt="Image 1"
-        />
-      </div>
+          <div>
+            <img
+              src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
+              alt="Image 1"
+            />
 
-      <button id="Merve-button" class="style-button">Merve</button>
+            <button id="Merve-button" class="style-button">Merve</button>
 
-      <div id="more-info" style="display: none">
-        <p>A bit more about me goes here!</p>
-      </div>
+            <div id="more-info" style="display: none">
+              <p>A bit more about me goes here!</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
+              alt="Image 2"
+            />
 
-      <div>
-        <img
-          src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
-          alt="Image 2"
-        />
-        <button id="Anna-button" class="style-button">Anna</button>
+            <button id="Anna-button" class="style-button">Anna</button>
 
-        <div id="more-info2" style="display: none">
-          <p>A bit more about me goes here!</p>
+            <div id="more-info2" style="display: none">
+              <p>A bit more about me goes here!</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
+              alt="Image 3"
+            />
+            <button id="Inês-button" class="style-button">Inês</button>
+
+            <div id="more-info3" style="display: none">
+              <p>A bit more about me goes here!</p>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
+              alt="Image 4"
+            />
+            <button id="Sian-button" class="style-button">Sian</button>
+
+            <div id="more-info4" style="display: none">
+              <p>A bit more about me goes here!</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <img
-          src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
-          alt="Image 3"
-        />
-        <button id="Inês-button" class="style-button">Inês</button>
-
-        <div id="more-info3" style="display: none">
-          <p>A bit more about me goes here!</p>
-        </div>
-      </div>
-
-      <div>
-        <img
-          src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
-          alt="Image 4"
-        />
-        <button id="Sian-button" class="style-button">Sian</button>
-
-        <div id="more-info4" style="display: none">
-          <p>A bit more about me goes here!</p>
-        </div>
-      </div>
-    </div>
       </div>
     </main>
     <footer>
       <div class="footerContacts">
-        <a href="../../pages/extra/who_are_we.html" target="_blank">Who are we?</a>
+        <a href="../../pages/extra/who_are_we.html" target="_blank"
+          >Who are we?</a
+        >
         <a href="mailto:info@savesmart.com">Contact Us</a>
         <a href="../../pages/extra/privacy_policy.html" target="_blank"
           >Privacy Policy</a
@@ -121,10 +153,10 @@
           >Terms and Conditions</a
         >
       </div>
-      
+
       <p>Copyright Team Black ©2023</p>
     </footer>
-   <script>
+    <script>
       const toggleButton = document.getElementById("Merve-button");
       const moreInfo = document.getElementById("more-info");
 
