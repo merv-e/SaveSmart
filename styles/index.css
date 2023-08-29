@@ -177,7 +177,7 @@ h1 {
   /* background-color: red; */
 }
 
-#preferences h2 {
+#preferences h2, #update-target h2 {
   text-align: center;
   color: #0056b3;
   margin: 2rem;
@@ -210,4 +210,37 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+/* Styling for updating daily or monthly target */
+#update-target {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: var(--secondary-blue);
+  background-color: white;
+  max-width: 700px;
+  font-size: large;
+  padding: 20px;
+}
+
+#update-target h2 {
+  display: flex;
+  align-self: center;
+}
+
+.target{
+  display: grid;
+  grid-template-columns: 2.5fr 2fr 2fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+#update-target input {
+  border: 2px solid var(--secondary-blue);
+  border-radius: 5px;
+  padding: 0.4rem;
 }
