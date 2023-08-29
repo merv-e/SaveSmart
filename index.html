@@ -33,24 +33,25 @@
       </div>
 
       <div class="goals">
+
         <div class="goal">
-          <p>Money Saved Daily</p>
-          <div class="moneyGoal">
-            <p id="dailyGoal">5 €</p>
-            <img src="" alt="" />
-            <!-- style span --- text-align : left -->
-            <span
-              >Check your settings to see if it is being updated at the end of
-              everyday <b>automatically</b>.</span
-            >
+          <h3>Money Saved Daily</h3>
+          <div class="dailyGoal">
+            <p id="dailyGoal">5€</p>
+            <p class="settings">Check your settings to see if it is being updated at the end of everyday <b>automatically</b>.</p>
           </div>
         </div>
 
         <div class="goal">
-          <p>Your Progress This Month</p>
-          <progress id="goalBar" value="32" max="100">32%</progress>
-          <div class="moneyGoal">
-            <p>Monthly Goal</p>
+          <h3>Your Progress This Month</h3>
+          <div class="currentMoney">
+            <p id="currentMoney">25 €</p>
+            <progress id="goalBar" max="150" value="25">25%</progress>
+            <button id="increaseMoneyButton">Add Money</button>
+          </div>
+          
+          <div class="monthlyGoal">
+            <p class="month-goal">Monthly Goal</p>
             <p id="monthlyGoal">150 €</p>
           </div>
         </div>
@@ -105,7 +106,10 @@
       </div>
    
 </section>
-    </main>
+</main>
+
+
+
     <footer>
       <div class="footerContacts">
         <a href="./pages/extra/who_are_we.html" target="_blank">Who are we?</a>
@@ -119,6 +123,8 @@
       </div>
       <p>Copyright Team Black ©2023</p>
     </footer>
-    <script src="./js/dummy_data.js"></script>
+
+    <!--<script src="js/dummy_data.js"></script>-->
+    <script src="script.js"></script>
   </body>
 </html>

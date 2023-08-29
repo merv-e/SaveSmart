@@ -51,3 +51,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+    // Get references to the elements
+    const currentMoneyElement = document.getElementById("currentMoney");
+    const increaseMoneyButton = document.getElementById("increaseMoneyButton");
+    const goalBar = document.getElementById("goalBar");
+
+    // Initial money value and progress
+    let currentMoney = 25;
+    let progress = 25;
+
+    // Function to update the money value and display it
+    function increaseMoney() {
+      currentMoney += 5; // Increase by 5
+      currentMoneyElement.textContent = currentMoney + " €"; // Update the displayed value
+      
+      // Update progress and progress bar
+      progress += 5;
+      goalBar.value = progress;
+    }
+
+    // Add a click event listener to the button
+    increaseMoneyButton.addEventListener("click", increaseMoney);
+
