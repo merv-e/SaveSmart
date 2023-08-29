@@ -33,12 +33,14 @@
       </div>
 
       <div class="goals">
-
         <div class="goal">
           <h3>Money Saved Daily</h3>
           <div class="dailyGoal">
             <p id="dailyGoal">5€</p>
-            <p class="settings">Check your settings to see if it is being updated at the end of everyday <b>automatically</b>.</p>
+            <p class="settings">
+              Check your settings to see if it is being updated at the end of
+              everyday <b>automatically</b>.
+            </p>
           </div>
         </div>
 
@@ -49,7 +51,7 @@
             <progress id="goalBar" max="150" value="25">25%</progress>
             <button id="increaseMoneyButton">Add Money</button>
           </div>
-          
+
           <div class="monthlyGoal">
             <p class="month-goal">Monthly Goal</p>
             <p id="monthlyGoal">150 €</p>
@@ -58,29 +60,42 @@
       </div>
 
       <div id="update-target">
-        <!-- <div class="targets"> -->
-          <h2>Update Your Goal</h2>
-          <!-- Update daily target -->
-          <div class="target">
-            <label for="input-update-daily-target">Update your daily target</label>
-            <input type="number"
-            id="input-update-daily-target" min="1"/>
-            <button id="btn-update-daily-target" type="submit">Update target</button>
-          </div>
-          
-          <!-- Update monthly target -->
-          <div class="target">
-            <label for="input-update-monthly-target">Update your monthly target</label>
-            <input type="number"
-            id="input-update-monthly-target" min="1" required/>
-            <button id="btn-update-monthly-target" type="submit">Update target</button>
-          </div>
-        <!-- </div> -->
+        <h3>Update Your Goal</h3>
+
+        <!-- Update DAILY target -->
+        <form id="daily-form" class="target" >
+          <label for="input-update-daily-target"
+            >Update your daily target</label
+          >
+          <input
+            type="number"
+            id="input-update-daily-target"
+            min="1"
+            max="10000"
+          />
+          <button id="btn-update-daily-target">Update target</button>
+        </form>
+
+        <!-- Update monthly target -->
+        <form id="monthy-form" class="target">
+          <label for="input-update-monthly-target"
+            >Update your monthly target</label
+          >
+          <input
+            type="number"
+            id="input-update-monthly-target"
+            min="1"
+            max="10000"
+          />
+          <button id="btn-update-monthly-target" type="submit">
+            Update target
+          </button>
+        </form>
       </div>
 
       <div id="preferences">
         <form>
-          <h2>Preferences</h2>
+          <h3>Preferences</h3>
           <div class="preference">
             <input
               type="checkbox"
@@ -89,8 +104,8 @@
               value="preference1"
             />
             <label for="preference1"
-              >I would like the targeted amount to be automatically sent to my
-              separate account on a daily basis.</label
+              >I would like the targeted amount to be <b>automatically</b> sent
+              to my separate account on a daily basis.</label
             >
           </div>
           <div class="preference">
@@ -125,11 +140,7 @@
           <a href="pages/tips.html">Savings Tips</a>
         </div>
       </div>
-   
-</section>
     </main>
-
-
 
     <footer>
       <div class="footerContacts">
@@ -145,7 +156,6 @@
       <p>Copyright Team Black ©2023</p>
     </footer>
 
-    <!--<script src="js/dummy_data.js"></script>-->
     <script src="script.js"></script>
     <script src="./js/index.js"></script>
   </body>

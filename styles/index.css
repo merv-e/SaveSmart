@@ -166,18 +166,14 @@ h1 {
   align-items: center;
   justify-content: center;
   font-size: large;
-  /* max-width: 400px; */
-
   word-wrap: break-word;
   border: 1px solid var(--secondary-blue);
   border-radius: 5px;
   background-color: white;
-  /* margin: 2rem; */
   padding: 1rem;
-  /* background-color: red; */
 }
 
-#preferences h2, #update-target h2 {
+#preferences h3, #update-target h3 {
   text-align: center;
   color: #0056b3;
   margin: 2rem;
