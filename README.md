@@ -1,5 +1,5 @@
 **CFG JavaScript Challenge** <br>
-**Budget-Planner** <br> <br>
+**SaveSmart** <br> <br>
 
 **Team Black:** <br>
 Anna Al-Samarrai <br>
